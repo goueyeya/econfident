@@ -7,8 +7,6 @@ import sys
 import asyncio
 import sqlite3
 
-from discord_token import token
-
 from datetime import datetime
 
 from src.model import load_model, predict
@@ -165,4 +163,4 @@ class EconfidentBot(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 client = EconfidentBot(intents=intents)
-client.run(token) # use os.environ("DISCORD_TOKEN") if you want to use the token from the environment variables
+client.run(os.environ["DISCORD_TOKEN"]) # use  if you want to use the token from the environment variables
