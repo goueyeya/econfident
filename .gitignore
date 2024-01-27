@@ -1,0 +1,4 @@
+/venv
+/data/bert_model/tf_model.h5
+/.discord_token.txt
+/.idea
